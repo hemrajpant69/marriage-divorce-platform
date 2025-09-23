@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+
+/* Custom CSS for enhanced styling */
+:root {
+  --danger-dark: #c82333;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(135deg, #dc3545 0%, var(--danger-dark) 100%);
+}
+
+/* Process Steps */
+.process-steps {
+  position: relative;
+  padding-left: 30px;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e9ecef;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #dc3545;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h5 {
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-content h6 {
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+/* Hover effects */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Tab styling */
+.nav-tabs .nav-link {
+  border: none;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #dc3545;
+  border-bottom: 3px solid #dc3545;
+  background: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .process-steps {
+    padding-left: 20px;
+  }
+  
+  .step-number {
+    width: 25px;
+    height: 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Custom CSS to enhance Bootstrap */
+.hover-shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Ensure cards have equal height */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+/* Custom badge styling */
+.badge {
+  font-size: 0.7rem;
+  padding: 0.35em 0.65em;
+}
+
+/* Progress bar customization */
+.progress {
+  border-radius: 10px;
+}
+
+.progress-bar {
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .display-5 {
+    font-size: 2rem;
+  }
+}
+/* Custom CSS for enhanced styling */
+:root {
+  --primary-dark: #0056b3;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(135deg, #0d6efd 0%, var(--primary-dark) 100%);
+}
+
+/* Process Steps */
+.process-steps {
+  position: relative;
+  padding-left: 30px;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e9ecef;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h5 {
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-content h6 {
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+/* Hover effects */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Tab styling */
+.nav-tabs .nav-link {
+  border: none;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #0d6efd;
+  border-bottom: 3px solid #0d6efd;
+  background: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .process-steps {
+    padding-left: 20px;
+  }
+  
+  .step-number {
+    width: 25px;
+    height: 25px;
+    font-size: 0.9rem;
+  }
+  
+  .timeline {
+    padding-left: 15px;
+  }
+}
+    </style>
+    <title>Vite + React</title>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
