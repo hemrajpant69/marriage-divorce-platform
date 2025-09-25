@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
+import heroImage from "../assets/hero.png"; 
 
 export default function Home() {
   return (
@@ -9,8 +10,7 @@ export default function Home() {
         description="Learn about Nepal's Marriage and Divorce laws, regulations, and apply online."
       />
 
-      {/* Hero Section */}
-      <section className="bg-light py-5 position-relative overflow-hidden">
+        <section className="bg-light py-5 position-relative overflow-hidden">
         <div className="container py-5">
           <div className="row align-items-center py-4">
             <div className="col-lg-6 mb-5 mb-lg-0">
@@ -39,10 +39,22 @@ export default function Home() {
                 <i className="bi bi-telephone me-2"></i>Consult with Expert
               </button>
             </div>
+            
+            {/* Hero Image Column - Added efficiently */}
+            <div className="col-lg-6">
+              <div className="position-relative">
+                <img 
+                  src={heroImage} 
+                  alt="Marriage & Divorce Legal Services" 
+                  className="img-fluid rounded-3 shadow-lg"
+                  style={{ maxHeight: '500px', objectFit: 'cover', width: '100%' }}
+                />
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-primary bg-opacity-10 rounded-3"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       {/* Stats Section */}
       <section className="py-4 bg-white border-bottom">
         <div className="container">
