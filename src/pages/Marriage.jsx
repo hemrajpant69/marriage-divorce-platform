@@ -1,6 +1,6 @@
 import SEO from "../components/SEO";
 import { useState } from "react";
-
+import WhatsAppFloat from "../components/WhatsAppFloat";
 export default function Marriage() {
   const [activeTab, setActiveTab] = useState("overview");
 
@@ -10,7 +10,7 @@ export default function Marriage() {
         title="Marriage Laws in Nepal | Registration Process & Requirements" 
         description="Complete guide to marriage laws, registration process, legal requirements, and rights in Nepal. Professional assistance for marriage registration." 
       />
-      
+      <WhatsAppFloat />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-dark py-5 text-white">
         <div className="container py-4">

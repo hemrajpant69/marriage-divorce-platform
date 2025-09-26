@@ -37,9 +37,14 @@ export default function Home() {
                   <span className="text-muted">24/7 Support</span>
                 </div>
               </div>
-              <button className="btn btn-primary btn-lg px-4 py-2">
-                <i className="bi bi-telephone me-2"></i>Consult with Expert
-              </button>
+             <button
+  className="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center"
+  onClick={() => (window.location.href = "tel:+9779809437032")}
+>
+  <i className="bi bi-telephone me-2"></i>
+  Consult with Expert
+</button>
+
             </div>
             
             {/* Hero Image Column - Added efficiently */}

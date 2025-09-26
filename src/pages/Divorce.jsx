@@ -1,6 +1,6 @@
 import SEO from "../components/SEO";
 import { useState } from "react";
-
+import WhatsAppFloat from "../components/WhatsAppFloat";
 export default function Divorce() {
   const [activeTab, setActiveTab] = useState("overview");
 
@@ -10,7 +10,7 @@ export default function Divorce() {
         title="Divorce Laws in Nepal | Legal Process & Rights" 
         description="Comprehensive guide to divorce laws, procedures, rights, and legal requirements in Nepal. Professional assistance for divorce cases." 
       />
-      
+      <WhatsAppFloat />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-danger to-danger-dark py-5 text-white">
         <div className="container py-4">

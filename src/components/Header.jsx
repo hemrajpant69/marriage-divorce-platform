@@ -82,6 +82,16 @@ export default function Header() {
               </Link>
             </li>
             
+             <li className="nav-item">
+              <Link 
+                to="/about" 
+                className={`nav-link ${isActiveLink("/about")}`}
+              >
+                <i className="fas fa-envelope me-1 d-lg-none"></i>
+                About Us
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link 
                 to="/contact" 

@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import blogData from "../data/blogData";
+import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export default function Blog() {
   return (
     <div className="container my-5">
+      <WhatsAppFloat />
       <h2 className="text-center mb-4">Our Blog</h2>
       <div className="row">
         {blogData.map((blog) => (

@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import blogData from "../data/blogData";
-
+import WhatsAppFloat from "../components/WhatsAppFloat";
 export default function BlogDetails() {
   const { id } = useParams();
   const blog = blogData.find((b) => b.id === parseInt(id));
@@ -12,6 +12,7 @@ export default function BlogDetails() {
 
   return (
     <div className="container my-5">
+      <WhatsAppFloat />
       <Link to="/blog" className="btn btn-outline-secondary mb-3">← Back to Blog</Link>
       <div className="card shadow-lg p-4">
         <img
