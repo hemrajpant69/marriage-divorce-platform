@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import heroImage from "../assets/hero.png"; 
+import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         title="Marriage & Divorce in Nepal"
         description="Learn about Nepal's Marriage and Divorce laws, regulations, and apply online."
       />
+       <WhatsAppFloat />
 
         <section className="bg-light py-5 position-relative overflow-hidden">
         <div className="container py-5">
